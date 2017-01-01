@@ -1,27 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>HelpMe.now</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/master.css" charset="utf-8">
-</head>
-<body>
-    <div id="head-banner">
-        <h1>HelpMe.now</h1>
-        <h4>Crossplatform remote support at your fingerprints.</h4>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+    <style media="screen">
+      body, html {
+        background: rgba(56,142,60 ,1);
+        margin: 0;
+        padding: 0;
+      }
+      .top {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-family: 'Exo 2', sans-serif;
+        color: #FFF;
+      }
+      .top a {
+        border-radius: 4px;
+        background: rgba(27,94,32 ,1);
+        padding: 10px;
+        color: #FFF;
+      }
+      a {
+        text-decoration: none;
+        color: rgba(56,142,60 ,08);
+      }
+    </style>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="top">
+      <h1>HelpMe.now</h1>
+      <p>Web based open source ticketing platform</p>
+      <a href="https://github.com/elvisblanco1993/HelpMe.now"><i class="fa fa-github-alt" aria-hidden="true"></i> Github page</a>
     </div>
-    <div id="banner-info">
-        <h2></h2>
-    </div>
-
-    <div id="banner-download">
-        <div class="downloadBtn-wrap">
-            <h2 class="h2">Download</h2>
-            <button class="macBtn" type="button" name="button" onClick="parent.location='https://mega.nz/#!SZV32ZwD'">Mac OS</button>
-            <button class="linuxBtn" type="button" name="button" onClick="parent.location='https://mega.nz/#!mds0iBRS'">Linux x64</button>
-            <button class="winBtn" type="button" name="button" onClick="parent.location='https://mega.nz/#!LRdBDL7a'">Windows x64</button>
-        </div>
-    </div>
-</body>
+  </body>
 </html>

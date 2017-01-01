@@ -1,9 +1,11 @@
-body {
+body, html {
+    margin: 0;
+    padding: 0;
     font-family: "DejaVu Sans Light";
-    background-color: black;
+    background-color: #1a1915;
 }
-
 #head-banner {
+  margin: 0;
     background-image: url("../img/bg.png");
     background-size: 100%;
     background-repeat: no-repeat;
@@ -12,76 +14,26 @@ body {
     text-align: center;
     font-family: "DejaVu Sans Light";
     font-size-adjust: inherit;
-
 }
-
-#banner-download {
-  background-color: rgba(0, 0, 0, 0.25);
+.contact {
+  color: #e0e0e0;
+  margin: 0;
+  padding: 30px;
+  background: #1a1915;
+  align-items: center;
   text-align: center;
+}
+input[type="text"], input[type="email"], textarea {
+  margin: 10px;
+  text-align: center;
+  padding: 10px;
+  outline: none;
+  border: none;
+}
+input[type="submit"] {
+  padding: 10px 40px;
   color: snow;
-}
-#banner-download button {
-  color: #000;
-}
-
-.macBtn {
-  background-color: #ffafaf;
-  background-image: url(../img/macImg.svg);
-  background-position: 16px 16px;
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-  padding: 20px 60px;
-  margin: 10px;
-  border-style: none;
-  border-radius: 5px;
-
-}
-
-.macBtn:hover {
-  color: white;
-  background-image: url(../img/macImgWhite.svg);
-  cursor: pointer;
-}
-
-.linuxBtn {
-  background-color: #ffafaf;
-  background-image: url(../img/linuxImg.svg);
-  background-position: 16px 16px;
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-  padding: 20px 60px;
-  margin: 10px;
-  border-style: none;
-  border-radius: 5px;
-
-}
-
-.linuxBtn:hover {
-  color: white;
-  background-image: url(../img/linuxImgWhite.svg);
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.winBtn {
-  background-color: #ffafaf;
-  background-image: url(../img/winImg.svg);
-  background-position: 16px 16px;
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-  padding: 20px 60px;
-  margin: 10px;
-  border-style: none;
-  border-radius: 5px;
-
-}
-
-.winBtn:hover {
-  color: white;
-  background-image: url(../img/winImgWhite.svg);
-  cursor: pointer;
-}
-
-.last-block {
-    background-color: aquamarine;
+  background: green;
+  border: none;
+  outline: none;
 }
