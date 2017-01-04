@@ -15,8 +15,8 @@ if ($conn->connect_error) {
 	}
 
 // sql to create tickets
-$sql = "CREATE TABLE tickets (
-id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+$sql = "CREATE TABLE closed (
+id INT(6) UNSIGNED PRIMARY KEY,
 date TIMESTAMP,
 email VARCHAR(50),
 phone VARCHAR(15),

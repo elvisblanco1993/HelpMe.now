@@ -57,7 +57,7 @@ $mail->Port = 587;
 $mail->From = "dev.helpmenow@gmail.com";
 $mail->FromName = "HelpMe.now team";
 
-$mail->addAddress("elvisblanco1993@gmail.com", "");
+$mail->addAddress($email, "");      // EMAIL WILL BE SEND TO THE EMAIL ADDRESS THE USER ENTERED
 
 $mail->isHTML(true);
 

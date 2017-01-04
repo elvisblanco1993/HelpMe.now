@@ -10,7 +10,7 @@ table {
 th{
   background: #00695C;
   color: #fff;
-  padding: 20px;
+  padding: 10px 20px;
 }
 tr:nth-child(even){
   background: #CFD8DC;
@@ -46,15 +46,15 @@ td{
 }
 
 a, input[type='submit'] {
-  background-color: #4CAF50;
-    border: none;
+  background-color: #263238;
+    border: 1px solid #455A64;
     color: white;
-    padding: 5px 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
+    padding: 5px 15px;
     cursor: pointer;
 }
 input[type='text']{

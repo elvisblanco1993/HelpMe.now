@@ -2,15 +2,15 @@
 require 'libs/dbconnect.php';
 require 'libs/refresh.php';
 
-$sql = "SELECT * FROM tickets";
+$sql = "SELECT * FROM closed";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
    // output data of each row
    echo "<div class='topbar'>
-   <a href='index.php'><i class='fa fa-refresh' aria-hidden='true'></i></a>
-   <a href='search.php'><i class='fa fa-search' aria-hidden='true'></i></a>
-   <a href='closed.php'>Archived tickets</a>
+   <a href='closed.php'><i class='fa fa-refresh' aria-hidden='true'></i></a>
+   <a href='search_closed.php'><i class='fa fa-search' aria-hidden='true'></i></a>
+   <a href='index.php'>Inbox</a>
    </div>";
    echo "<table>";
    echo "<tr>";
@@ -32,7 +32,7 @@ if ($result->num_rows > 0) {
    }
    echo "</table>";
 } else {
-  echo "<div class='topbar'><a href='search.php'>Search</a><a href='closed.php'>Archived</a><span>Still no tickets in your inbox</span></div>";
+  echo "<div class='topbar'><a href='search.php'>Search</a><span>Still no tickets in your inbox</span></div>";
   echo "<table>";
   echo "<tr>";
   echo "<th>ID</th>";
@@ -54,7 +54,7 @@ $conn->close();
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/tooltip.css">
-    <title>Inbox | HelMenow</title>
+    <title>Archived | HelpMe.now</title>
   </head>
   <body>
 
