@@ -15,5 +15,4 @@ In the future more functionality will be added
 
 ===================================================
 
-If you have any questions about the project, don't hessitate to shoot me an email to elvisblanco1993@gmail.com
-
+If you have any questions about the project, don't hessitate to shoot me an email to dev.helpmenow@gmail.com
