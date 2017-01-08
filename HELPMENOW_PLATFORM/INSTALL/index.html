@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/master.css">
+    <title>HelpMe.now | Installer</title>
+    <script type="text/javascript">
+      function license() {
+        if (form.checklicense.checked == false) {
+          alert("You must agree the terms and conditions!");
+          return false;
+        }
+        return true;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>HelpMe.now ticketing platform</h1>
+    <h2>Installation wizard</h2>
+    <div class="container">
+      <form name="form" action="php/install.php" method="post">
+        <label><input type="checkbox" name="checklicense" value="Agree"> I have read and agree to the <a href="lic/license.pdf">Terms and Conditions, and Privacy Policy.</a></label><br>
+        <input type="submit" name="" value="Install" onclick="return license();">
+      </form>
+    </div>
+  </body>
+</html>
