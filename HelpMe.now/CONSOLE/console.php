@@ -1,4 +1,14 @@
 <?php
+
+session_start();
+
+if(isset($_SESSION['id'])) {
+    $username = $_SESSION['username'];
+    $userId = $_SESSION['id'];
+//////////////////////////////////////////////////////////
+/////////////////////////START///////////////////////////
+////////////////////////////////////////////////////////
+
 require 'libs/dbconnect.php';
 require 'libs/refresh.php';
 
@@ -15,7 +25,10 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
    // output data of each row
    echo "<div class='topbar'>
-   <a href='index.php'><i class='fa fa-refresh' aria-hidden='true'></i></a>
+   <span><a href='libs/logout.php'>Logout</a></span>
+   </div>";
+   echo "<div class='topbar'>
+   <a href='console.php'><i class='fa fa-refresh' aria-hidden='true'></i></a>
    <a href='search.php'><i class='fa fa-search' aria-hidden='true'></i></a>
    <a href='closed.php'>Archived tickets</a>
    </div>";
@@ -39,6 +52,9 @@ if ($result->num_rows > 0) {
    }
    echo "</table>";
 } else {
+  echo "<div class='topbar'>
+  <span><a href='libs/logout.php'>Logout</a></span>
+  </div>";
   echo "<div class='topbar'><a href='search.php'>Search</a><a href='closed.php'>Archived</a><span>Still no tickets in your inbox</span></div>";
   echo "<table>";
   echo "<tr>";
@@ -52,6 +68,11 @@ if ($result->num_rows > 0) {
   echo "</table>";
 }
 $conn->close();
+
+} else {
+    header('Location: index.php');
+    die();
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -64,6 +85,7 @@ $conn->close();
     <title>Inbox | HelMenow</title>
   </head>
   <body>
+
 
   </body>
 </html>

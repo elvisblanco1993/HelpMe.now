@@ -7,6 +7,7 @@
    $psk = $_POST["db_psk"];
    $dbname = $_POST["db_name"];
 
+
    define("SERVER", "$server");
    define("USER", "$user");
    define("PSK", "$psk");
@@ -93,7 +94,8 @@
    date TIMESTAMP,
    username VARCHAR(30) NOT NULL,
    email VARCHAR(50),
-   password VARCHAR(30)
+   password VARCHAR(30),
+   activated ENUM('0','1') NOT NULL DEFAULT '1'
    )";
 
    if ($conn->query($sql) === TRUE) {
@@ -107,21 +109,6 @@
    ////////////////////////////////////////////////////////////////////////////
    //Create DBCONNECT
    $dbconnect = fopen("libs/dbconnect.php", "w") or die("Unable to open file!");
-   $php = "<?php \n";
-   fwrite($dbconnect, $php);
-   $php = "\$dbserver = '$server';\n";
-   fwrite($dbconnect, $php);
-   $php = "\$dbuser = '$user';\n";
-   fwrite($dbconnect, $php);
-   $php = "\$dbpsk = '$psk';\n";
-   fwrite($dbconnect, $php);
-   $php = "\$dbname = '$dbname';\n";
-   fwrite($dbconnect, $php);
-   $php = "?>\n";
-   fwrite($dbconnect, $php);
-   fclose($dbconnect);
-//////////////////////////////////////////////////////////////////////////////
-   $dbconnect = fopen("../../CONSOLE/libs/dbconnect.php", "w") or die("Unable to open file!");
    $php = "<?php \n";
    fwrite($dbconnect, $php);
    $php = "\$dbserver = '$server';\n";
@@ -151,6 +138,33 @@
    fwrite($dbconnect, $php);
    fclose($dbconnect);
 /////////////////////////////////////////////////////////////////////////////
-   header("Location: adduser.php");
+   $dbconnect = fopen("../../CONSOLE/libs/dbconnect.php", "w") or die("Unable to open file!");
+   $php = "<?php \n";
+   fwrite($dbconnect, $php);
+   $php = "\$dbserver = '$server';\n";
+   fwrite($dbconnect, $php);
+   $php = "\$dbuser = '$user';\n";
+   fwrite($dbconnect, $php);
+   $php = "\$dbpsk = '$psk';\n";
+   fwrite($dbconnect, $php);
+   $php = "\$dbname = '$dbname';\n";
+   fwrite($dbconnect, $php);
+   $php = "\$dbCon = mysqli_connect(\$dbserver, \$dbuser , \$dbpsk, \$dbname);\n";
+   fwrite($dbconnect, $php);
+   $php = "if (mysqli_connect_errno()) {\n";
+   fwrite($dbconnect, $php);
+   $php = "echo 'Failed to connect: ' . mysqli_connect_error();\n";
+   fwrite($dbconnect, $php);
+   $php = "}\n";
+   fwrite($dbconnect, $php);
+   $php = "?>\n";
+   fwrite($dbconnect, $php);
+   fclose($dbconnect);
+// //////////////////////////////////////////////////////////////////////////
+// Register email and password file for sending emails to clients
+
+   ////////////////////////////////////////////////////////////////////////////
+
+   header("Location: email.php");
  }
   ?>

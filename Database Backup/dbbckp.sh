@@ -12,11 +12,11 @@
 #----------------------------------------------------
 
 # (1) set up all the mysqldump variables
-FILE=`date +"%Y%m%d"`.helpmenow_backup.sql
-DBSERVER=127.0.0.1
-DATABASE=helpmenow
-USER=root
-PASS=bahia9397
+FILE=`date +"%Y%m%d"`.elearning_backup.sql
+DBSERVER=127.0.0.1     #Specify the db server
+DATABASE=elearning     #Specify the database name here
+USER=root	       #Specify the db username
+PASS=bahia9397         #Specify the db password
 
 # (2) in case you run this more than once a day, remove the previous version of the file
 unalias rm     2> /dev/null
