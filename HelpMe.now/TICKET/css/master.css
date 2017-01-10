@@ -1,0 +1,47 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-weight: lighter;
+  background: #388E3C;
+  color: #fff;
+}
+
+.form-centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -15%;
+  margin-top: -15%;
+}
+.p {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 0;
+}
+p {
+  font-size: 10px;
+  text-align: center;
+}
+
+
+input, textarea{
+  color: #fff;
+  padding: 10px;
+  margin: 10px;
+  background: rgba(255, 255, 255, .1);
+  border: none;
+  outline: none;
+
+  width:100%;
+  box-sizing: border-box;
+}
+
+input[type="submit"]{
+  background: #FFF;
+  color: green;
+}
+
+input:focus, textarea:focus {
+  border-bottom: 1px solid #fff;
+}

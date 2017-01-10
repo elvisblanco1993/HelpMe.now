@@ -1,0 +1,50 @@
+.tooltip {
+    position: relative;
+    display: inline-block;
+    color: #78909C;
+    cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+    font-family: sans-serif;
+    visibility: hidden;
+    width: 200px;
+    background-color: rgba(0,0,0,.8);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+input[type="submit"] {
+  background: none;
+  border: none;
+  outline: none;
+}
+input[type="text"] {
+  background: #fff;
+  color: #000;
+  text-align: center;
+}
+nav div .nav-wrapper {
+  background: #000;
+}
