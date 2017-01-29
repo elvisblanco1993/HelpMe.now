@@ -1,6 +1,7 @@
 html, body {
   margin: 0;
   font-family: sans-serif;
+<<<<<<< HEAD
   background: #FFF;
 }
 
@@ -18,6 +19,21 @@ th{
 }
 tr:nth-child(even){
   background: #f2f2f2;
+=======
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th{
+  background: #00695C;
+  color: #fff;
+  padding: 10px 20px;
+}
+tr:nth-child(even){
+  background: #CFD8DC;
+>>>>>>> master
 }
 td{
   text-align: center;
@@ -50,12 +66,21 @@ td{
 }
 
 a, input[type='submit'] {
+<<<<<<< HEAD
+=======
+  background-color: #263238;
+    border: 1px solid #455A64;
+>>>>>>> master
     color: white;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+<<<<<<< HEAD
     margin: 4px;
+=======
+    margin: 4px 2px;
+>>>>>>> master
     padding: 5px 15px;
     cursor: pointer;
 }
@@ -64,19 +89,39 @@ input[type='text']{
   text-align: center;
   text-decoration: none;
   display: inline-block;
+<<<<<<< HEAD
   overflow: hidden;
   font-size: 16px;
 }
 .topbar {
   background: #5e2557;
+=======
+  font-size: 16px;
+  margin: 4px 2px;
+}
+.topbar {
+  background: #263238;
+  padding: 5px 0 5px 20px;
+>>>>>>> master
 }
 .right-side {
   background: none;
   float: right;
+<<<<<<< HEAD
+=======
+  margin-right: 20px;
+  padding: 5px 15px;
+>>>>>>> master
 }
 
 span {
   float: right;
+<<<<<<< HEAD
   color: #fff;
   margin-right: 10px;
+=======
+  padding-top: 10px;
+  padding-right: 20px;
+  color: #fff;
+>>>>>>> master
 }

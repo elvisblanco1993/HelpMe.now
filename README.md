@@ -14,5 +14,15 @@ Features
 In the future more functionality will be added
 
 ===================================================
+**What you will need**
+- A Debian server with Apache + PHP(+> 5.5) + MySql.
+- You might use any other Operating System. This software it's just being tested with Debian based Operating Systems.
 
-If you have any questions about the project, don't hesitate to shoot me an email to dev.helpmenow@gmail.com
+**How to install**
+1- Make sure you have all the required software installed on your system.
+2- Copy all the content inside *HelpMe.now* folder, into your web root directory.
+3- On a web browser, open the path to install.php (http://serverip/INSTALL/install.php).
+4- FOllow all the steps in the wizard.
+5- After you finish the installation, you can safely remove the "INSTALL" folder from the root directory.
+
+NOTE: Now you have CONSOLE and TICKET, use those links to either open new tickets, or checking the submissions on the system.
