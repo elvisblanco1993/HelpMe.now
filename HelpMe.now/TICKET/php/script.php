@@ -49,7 +49,11 @@ $mail->FromName = $companyname;
 $mail->addAddress($email, "");      // EMAIL WILL BE SEND TO THE EMAIL ADDRESS THE USER ENTERED
 $mail->isHTML(true);
 $mail->Subject = "Ticket Notice";
+<<<<<<< HEAD
 $mail->msgHTML(file_get_contents('views/email.php'), dirname(__FILE__));
+=======
+$mail->msgHTML(file_get_contents('views/email.html'), dirname(__FILE__));
+>>>>>>> master
 if(!$mail->send())
 {
     echo "Mailer Error: " . $mail->ErrorInfo;

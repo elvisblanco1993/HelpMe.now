@@ -5,19 +5,14 @@
     <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
     <style media="screen">
       body, html {
-        background: rgba(56,142,60 ,1);
+        background: #ECEFF1;
         margin: 0;
         padding: 0;
       }
       .top {
-        display: block;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         text-align: center;
         font-family: 'Exo 2', sans-serif;
-        color: #FFF;
+        color: rgba(0,0,0 ,.8);
       }
       .top a {
         border-radius: 4px;
@@ -29,14 +24,52 @@
         text-decoration: none;
         color: rgba(56,142,60 ,08);
       }
-      .footer {
-        font-family: sans-serif;
+
+      .content {
+        display: block;
+        padding: 10px;
+        width: 50%;
+        font-family: monospace;
         font-weight: lighter;
-        font-variant: small-caps;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.8);
+        color: #455A64;
+      }
+      .content p {
+        text-align: left;
+      }
+      .content-left {
+        text-align: center;
+        border-radius: 10px;
+        margin: 1.5% auto;
+        width: 50%;
+        box-shadow:0.8px 1px 1.5px rgba(0, 0, 0, 0.2);
+        outline: none;
+      }
+      .content-center {
+        text-align: center;
+        border-radius: 10px;
+        margin: 1.5% auto;
+        width: 50%;
+        box-shadow:0.8px 1px 1.5px rgba(0, 0, 0, 0.2);
+        outline: none;
+
+      }
+
+      .content ul {
+        text-align: left;
+        color: #F4511E;
+      }
+      .li {
+        text-align: left;
+      }
+      .footer {
+        font-family: monospace;
+        font-weight: lighter;
         color: #fff;
-        background: rgba(27,94,32 ,.8);
+        background: rgba(0,0,0 ,.8);
         bottom: 0;
-        position: absolute;
+        position: fixed;
         text-align: center;
         width: 100%;
       }
@@ -51,10 +84,22 @@
     <div class="top">
       <h1>HelpMe.now</h1>
       <p>Web based open source ticketing platform</p>
-      <a href="https://github.com/elvisblanco1993/HelpMe.now"><i class="fa fa-github-alt" aria-hidden="true"></i> Github page</a>
+    </div>
+    <div class="content content-left">
+      <h4>Download</h4>
+      <p>You are free to download and use our code. Also you can modify it, make it better, and adapt it to your needs. Just make sure you include the license attached, within all changes you make in the code.</p>
+      <a href="https://github.com/elvisblanco1993/HelpMe.now">Download here</a>
+    </div>
+    <div class="content content-center">
+      <h4>Setup</h4>
+      <p>Make sure you follow the steps on the <a href="https://github.com/elvisblanco1993/HelpMe.now/blob/master/README.md">README</a> file contained in the repository.
+      <ul>
+        <b>What you will need:</b>
+        <li class="li">Apache + PHP + MySql (LAMP) server</li>
+      </ul></p>
     </div>
     <div class="footer">
-      <p>By: <em>Elvis Blanco Gonzalez</em> | email: <a href="mailto:dev.helpmenow@gmail.com?subject=feedback">dev.helpmenow@gmail.com</a> | 2016 -
+      <p>By: Elvis Blanco Gonzalez | email: <a href="mailto:dev.helpmenow@gmail.com?subject=feedback">dev.helpmenow@gmail.com</a> | 2016 -
         <script type="text/javascript">
             document.write(new Date().getFullYear());
         </script>
