@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 <?php
 require_once '../TICKET/php/libs/mailconnect.php'; ?>
-=======
->>>>>>> master
 <!DOCTYPE html>
 <html>
     <head>
@@ -10,14 +7,10 @@ require_once '../TICKET/php/libs/mailconnect.php'; ?>
       <title>Login | HelpMe.now</title>
     </head>
     <body>
-
       <div class="container">
         <img src="http://i.imgur.com/PGJDYPU.png" alt="logo name" width="96" height="96">
-<<<<<<< HEAD
         <p><?php echo $companyname; ?></p>
-=======
         <p>Company name</p>
->>>>>>> master
         <form id="form" method="post" action="libs/login.php">
             <input type="text" name="username" placeholder="Username" /><br />
             <input type="password" name="password" placeholder="Password" /><br />
